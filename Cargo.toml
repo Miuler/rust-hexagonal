@@ -1,0 +1,25 @@
+[package]
+name = "auto-gpt-api"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "auto-gpt-api"
+path = "src/infrastructure/main.rs"
+
+[dependencies]
+axum = "0.6.18"
+axum-macros = "0.3.7"
+bytes = "1.4.0"
+chrono = "0.4.26"
+derive_builder = "0.12.0"
+display_json = "0.2.1"
+http = "0.2.9"
+pyo3 = { version = "0.19.0", features = ["serde"] }
+rand = "0.8.5"
+rust_decimal = "1.30.0"
+rust_decimal_macros = "1.30.0"
+serde = { version = "1.0.165", features = ["derive"] }
+serde_json = "1.0.99"
+serde_yaml = "0.9.22"
+tokio = { version = "1.29.0", features = ["macros", "rt-multi-thread", "signal"] }
